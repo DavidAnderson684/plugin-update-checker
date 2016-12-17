@@ -41,6 +41,7 @@ Getting Started
 
 #### Notes
 - You can use [wp-update-server](https://github.com/YahnisElsts/wp-update-server) to automatically generate JSON metadata from ZIP packages.
+- You can use [the Simba Plugin Updates manager plugin](https://wordpress.org/plugins/simba-plugin-updates-manager/) to host free or licensed plugins using your WordPress install as your updates server; and [this corresponding class](https://github.com/DavidAnderson684/simba-plugin-manager-updater) for a UI that builds on top of the update checker for licensed plugins.
 - The second argument passed to `buildUpdateChecker` should be the full path to the main plugin file.
 - The `$slug` argument is optional but recommended. If it's omitted, the update checker will use the name of the main plugin file as the slug (e.g. `my-cool-plugin.php` &rarr; `my-cool-plugin`). This can lead to conflicts if your plugin has a generic file name like `plugin.php`.  
 - There are more options available - see the [blog](http://w-shadow.com/blog/2010/09/02/automatic-updates-for-any-plugin/) for details.
